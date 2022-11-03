@@ -1,6 +1,5 @@
-package sdj3.assignment3_1.database;
+package gRPC.assignment3_1.database;
 
-import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

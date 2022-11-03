@@ -1,22 +1,22 @@
-package sdj3.assignment3_1.service;
+package gRPC.assignment3_1.service;
 
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
-import sdj3.assignment3_1.protobuf.RequestText;
-import sdj3.assignment3_1.protobuf.ResponseText;
-import sdj3.assignment3_1.protobuf.RetrieveInfoGrpc;
+import gRPC.assignment3_1.protobuf.RequestText;
+import gRPC.assignment3_1.protobuf.ResponseText;
+import gRPC.assignment3_1.protobuf.RetrieveInfoGrpc;
 
 import java.util.ArrayList;
 
-import static sdj3.assignment3_1.database.Retrieve.getPackages;
-import static sdj3.assignment3_1.database.Retrieve.getRegNum;
+import static gRPC.assignment3_1.database.Retrieve.getPackages;
+import static gRPC.assignment3_1.database.Retrieve.getRegNum;
 
 @GRpcService
 public class RetrieveInfoImpl extends RetrieveInfoGrpc.RetrieveInfoImplBase {
     @Override
     public void retrieveRegNum(RequestText request, StreamObserver<ResponseText> responseObserver) {
         System.out.println("\nReceived Request ===> " + request.toString());
-        String tempRespond = "";
+        String tempRespond = "Product Nr. " + request.getInputText() + " has these animal parts ===> ";
         ArrayList<Integer> tempList = getRegNum(request.getInputText());
         tempRespond += tempList.get(0);
         for (int i = 1; i < tempList.size()-1; i++) {
@@ -33,9 +33,8 @@ public class RetrieveInfoImpl extends RetrieveInfoGrpc.RetrieveInfoImplBase {
     @Override
     public void retrievePackage(RequestText request, StreamObserver<ResponseText> responseObserver) {
         System.out.println("\nReceived Request ===> " + request.toString());
-
         System.out.println("Launching retrieve function from database");
-        String tempRespond = "";
+        String tempRespond = "Animal Nr. " + request.getInputText() + " is in these products ===> ";
         ArrayList<Integer> tempList = getPackages(request.getInputText());
         tempRespond += tempList.get(0);
         for (int i = 1; i < tempList.size()-1; i++) {

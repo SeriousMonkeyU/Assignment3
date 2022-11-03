@@ -1,11 +1,9 @@
-package sdj3.assignment3_1.database;
-
-import sdj3.assignment3_1.protobuf.ResponseText;
+package gRPC.assignment3_1.database;
 
 import java.sql.*;
 import java.util.ArrayList;
 
-import static sdj3.assignment3_1.database.DatabaseConnection.getConnection;
+import static gRPC.assignment3_1.database.DatabaseConnection.getConnection;
 
 public class Retrieve {
     public static ArrayList<Integer> getRegNum(String packageid) {

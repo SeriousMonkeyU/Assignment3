@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 
-option java_package = "sdj3.assignment3_1.protobuf";
+option java_package = "gRPC.assignment3_1.protobuf";
 
 service RetrieveInfo{
   rpc retrieveRegNum(RequestText) returns(ResponseText);

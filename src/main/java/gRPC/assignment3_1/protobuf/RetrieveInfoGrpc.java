@@ -1,4 +1,4 @@
-package sdj3.assignment3_1.protobuf;
+package gRPC.assignment3_1.protobuf;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -14,29 +14,29 @@ public final class RetrieveInfoGrpc {
   public static final String SERVICE_NAME = "RetrieveInfo";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<sdj3.assignment3_1.protobuf.RequestText,
-      sdj3.assignment3_1.protobuf.ResponseText> getRetrieveRegNumMethod;
+  private static volatile io.grpc.MethodDescriptor<gRPC.assignment3_1.protobuf.RequestText,
+      gRPC.assignment3_1.protobuf.ResponseText> getRetrieveRegNumMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "retrieveRegNum",
-      requestType = sdj3.assignment3_1.protobuf.RequestText.class,
-      responseType = sdj3.assignment3_1.protobuf.ResponseText.class,
+      requestType = gRPC.assignment3_1.protobuf.RequestText.class,
+      responseType = gRPC.assignment3_1.protobuf.ResponseText.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<sdj3.assignment3_1.protobuf.RequestText,
-      sdj3.assignment3_1.protobuf.ResponseText> getRetrieveRegNumMethod() {
-    io.grpc.MethodDescriptor<sdj3.assignment3_1.protobuf.RequestText, sdj3.assignment3_1.protobuf.ResponseText> getRetrieveRegNumMethod;
+  public static io.grpc.MethodDescriptor<gRPC.assignment3_1.protobuf.RequestText,
+      gRPC.assignment3_1.protobuf.ResponseText> getRetrieveRegNumMethod() {
+    io.grpc.MethodDescriptor<gRPC.assignment3_1.protobuf.RequestText, gRPC.assignment3_1.protobuf.ResponseText> getRetrieveRegNumMethod;
     if ((getRetrieveRegNumMethod = RetrieveInfoGrpc.getRetrieveRegNumMethod) == null) {
       synchronized (RetrieveInfoGrpc.class) {
         if ((getRetrieveRegNumMethod = RetrieveInfoGrpc.getRetrieveRegNumMethod) == null) {
           RetrieveInfoGrpc.getRetrieveRegNumMethod = getRetrieveRegNumMethod =
-              io.grpc.MethodDescriptor.<sdj3.assignment3_1.protobuf.RequestText, sdj3.assignment3_1.protobuf.ResponseText>newBuilder()
+              io.grpc.MethodDescriptor.<gRPC.assignment3_1.protobuf.RequestText, gRPC.assignment3_1.protobuf.ResponseText>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "retrieveRegNum"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sdj3.assignment3_1.protobuf.RequestText.getDefaultInstance()))
+                  gRPC.assignment3_1.protobuf.RequestText.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sdj3.assignment3_1.protobuf.ResponseText.getDefaultInstance()))
+                  gRPC.assignment3_1.protobuf.ResponseText.getDefaultInstance()))
               .setSchemaDescriptor(new RetrieveInfoMethodDescriptorSupplier("retrieveRegNum"))
               .build();
         }
@@ -45,29 +45,29 @@ public final class RetrieveInfoGrpc {
     return getRetrieveRegNumMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<sdj3.assignment3_1.protobuf.RequestText,
-      sdj3.assignment3_1.protobuf.ResponseText> getRetrievePackageMethod;
+  private static volatile io.grpc.MethodDescriptor<gRPC.assignment3_1.protobuf.RequestText,
+      gRPC.assignment3_1.protobuf.ResponseText> getRetrievePackageMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "retrievePackage",
-      requestType = sdj3.assignment3_1.protobuf.RequestText.class,
-      responseType = sdj3.assignment3_1.protobuf.ResponseText.class,
+      requestType = gRPC.assignment3_1.protobuf.RequestText.class,
+      responseType = gRPC.assignment3_1.protobuf.ResponseText.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<sdj3.assignment3_1.protobuf.RequestText,
-      sdj3.assignment3_1.protobuf.ResponseText> getRetrievePackageMethod() {
-    io.grpc.MethodDescriptor<sdj3.assignment3_1.protobuf.RequestText, sdj3.assignment3_1.protobuf.ResponseText> getRetrievePackageMethod;
+  public static io.grpc.MethodDescriptor<gRPC.assignment3_1.protobuf.RequestText,
+      gRPC.assignment3_1.protobuf.ResponseText> getRetrievePackageMethod() {
+    io.grpc.MethodDescriptor<gRPC.assignment3_1.protobuf.RequestText, gRPC.assignment3_1.protobuf.ResponseText> getRetrievePackageMethod;
     if ((getRetrievePackageMethod = RetrieveInfoGrpc.getRetrievePackageMethod) == null) {
       synchronized (RetrieveInfoGrpc.class) {
         if ((getRetrievePackageMethod = RetrieveInfoGrpc.getRetrievePackageMethod) == null) {
           RetrieveInfoGrpc.getRetrievePackageMethod = getRetrievePackageMethod =
-              io.grpc.MethodDescriptor.<sdj3.assignment3_1.protobuf.RequestText, sdj3.assignment3_1.protobuf.ResponseText>newBuilder()
+              io.grpc.MethodDescriptor.<gRPC.assignment3_1.protobuf.RequestText, gRPC.assignment3_1.protobuf.ResponseText>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "retrievePackage"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sdj3.assignment3_1.protobuf.RequestText.getDefaultInstance()))
+                  gRPC.assignment3_1.protobuf.RequestText.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  sdj3.assignment3_1.protobuf.ResponseText.getDefaultInstance()))
+                  gRPC.assignment3_1.protobuf.ResponseText.getDefaultInstance()))
               .setSchemaDescriptor(new RetrieveInfoMethodDescriptorSupplier("retrievePackage"))
               .build();
         }
@@ -126,15 +126,15 @@ public final class RetrieveInfoGrpc {
 
     /**
      */
-    public void retrieveRegNum(sdj3.assignment3_1.protobuf.RequestText request,
-        io.grpc.stub.StreamObserver<sdj3.assignment3_1.protobuf.ResponseText> responseObserver) {
+    public void retrieveRegNum(gRPC.assignment3_1.protobuf.RequestText request,
+                               io.grpc.stub.StreamObserver<gRPC.assignment3_1.protobuf.ResponseText> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRetrieveRegNumMethod(), responseObserver);
     }
 
     /**
      */
-    public void retrievePackage(sdj3.assignment3_1.protobuf.RequestText request,
-        io.grpc.stub.StreamObserver<sdj3.assignment3_1.protobuf.ResponseText> responseObserver) {
+    public void retrievePackage(gRPC.assignment3_1.protobuf.RequestText request,
+                                io.grpc.stub.StreamObserver<gRPC.assignment3_1.protobuf.ResponseText> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRetrievePackageMethod(), responseObserver);
     }
 
@@ -144,15 +144,15 @@ public final class RetrieveInfoGrpc {
             getRetrieveRegNumMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                sdj3.assignment3_1.protobuf.RequestText,
-                sdj3.assignment3_1.protobuf.ResponseText>(
+                gRPC.assignment3_1.protobuf.RequestText,
+                gRPC.assignment3_1.protobuf.ResponseText>(
                   this, METHODID_RETRIEVE_REG_NUM)))
           .addMethod(
             getRetrievePackageMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                sdj3.assignment3_1.protobuf.RequestText,
-                sdj3.assignment3_1.protobuf.ResponseText>(
+                gRPC.assignment3_1.protobuf.RequestText,
+                gRPC.assignment3_1.protobuf.ResponseText>(
                   this, METHODID_RETRIEVE_PACKAGE)))
           .build();
     }
@@ -174,16 +174,16 @@ public final class RetrieveInfoGrpc {
 
     /**
      */
-    public void retrieveRegNum(sdj3.assignment3_1.protobuf.RequestText request,
-        io.grpc.stub.StreamObserver<sdj3.assignment3_1.protobuf.ResponseText> responseObserver) {
+    public void retrieveRegNum(gRPC.assignment3_1.protobuf.RequestText request,
+                               io.grpc.stub.StreamObserver<gRPC.assignment3_1.protobuf.ResponseText> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getRetrieveRegNumMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void retrievePackage(sdj3.assignment3_1.protobuf.RequestText request,
-        io.grpc.stub.StreamObserver<sdj3.assignment3_1.protobuf.ResponseText> responseObserver) {
+    public void retrievePackage(gRPC.assignment3_1.protobuf.RequestText request,
+                                io.grpc.stub.StreamObserver<gRPC.assignment3_1.protobuf.ResponseText> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getRetrievePackageMethod(), getCallOptions()), request, responseObserver);
     }
@@ -205,14 +205,14 @@ public final class RetrieveInfoGrpc {
 
     /**
      */
-    public sdj3.assignment3_1.protobuf.ResponseText retrieveRegNum(sdj3.assignment3_1.protobuf.RequestText request) {
+    public gRPC.assignment3_1.protobuf.ResponseText retrieveRegNum(gRPC.assignment3_1.protobuf.RequestText request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getRetrieveRegNumMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public sdj3.assignment3_1.protobuf.ResponseText retrievePackage(sdj3.assignment3_1.protobuf.RequestText request) {
+    public gRPC.assignment3_1.protobuf.ResponseText retrievePackage(gRPC.assignment3_1.protobuf.RequestText request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getRetrievePackageMethod(), getCallOptions(), request);
     }
@@ -234,16 +234,16 @@ public final class RetrieveInfoGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<sdj3.assignment3_1.protobuf.ResponseText> retrieveRegNum(
-        sdj3.assignment3_1.protobuf.RequestText request) {
+    public com.google.common.util.concurrent.ListenableFuture<gRPC.assignment3_1.protobuf.ResponseText> retrieveRegNum(
+        gRPC.assignment3_1.protobuf.RequestText request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getRetrieveRegNumMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<sdj3.assignment3_1.protobuf.ResponseText> retrievePackage(
-        sdj3.assignment3_1.protobuf.RequestText request) {
+    public com.google.common.util.concurrent.ListenableFuture<gRPC.assignment3_1.protobuf.ResponseText> retrievePackage(
+        gRPC.assignment3_1.protobuf.RequestText request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getRetrievePackageMethod(), getCallOptions()), request);
     }
@@ -270,12 +270,12 @@ public final class RetrieveInfoGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_RETRIEVE_REG_NUM:
-          serviceImpl.retrieveRegNum((sdj3.assignment3_1.protobuf.RequestText) request,
-              (io.grpc.stub.StreamObserver<sdj3.assignment3_1.protobuf.ResponseText>) responseObserver);
+          serviceImpl.retrieveRegNum((gRPC.assignment3_1.protobuf.RequestText) request,
+              (io.grpc.stub.StreamObserver<gRPC.assignment3_1.protobuf.ResponseText>) responseObserver);
           break;
         case METHODID_RETRIEVE_PACKAGE:
-          serviceImpl.retrievePackage((sdj3.assignment3_1.protobuf.RequestText) request,
-              (io.grpc.stub.StreamObserver<sdj3.assignment3_1.protobuf.ResponseText>) responseObserver);
+          serviceImpl.retrievePackage((gRPC.assignment3_1.protobuf.RequestText) request,
+              (io.grpc.stub.StreamObserver<gRPC.assignment3_1.protobuf.ResponseText>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -299,7 +299,7 @@ public final class RetrieveInfoGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return sdj3.assignment3_1.protobuf.Proto.getDescriptor();
+      return gRPC.assignment3_1.protobuf.Proto.getDescriptor();
     }
 
     @java.lang.Override
