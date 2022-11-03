@@ -1,8 +1,10 @@
+package gRPC;
+
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import sdj3.assignment3_1.protobuf.RequestText;
-import sdj3.assignment3_1.protobuf.ResponseText;
-import sdj3.assignment3_1.protobuf.RetrieveInfoGrpc;
+import gRPC.assignment3_1.protobuf.RequestText;
+import gRPC.assignment3_1.protobuf.ResponseText;
+import gRPC.assignment3_1.protobuf.RetrieveInfoGrpc;
 
 public class GrpcClient {
     public static void main(String[] args) {
